@@ -28,7 +28,7 @@ const HomeScreen = () => {
           ))}
         </Row>
       ) : (
-        <h2>No products fetched yet</h2>
+        <h2>Loading...</h2>
       )}
     </>
   );

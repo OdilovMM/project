@@ -7,10 +7,10 @@ import { useEffect, useState } from "react";
 
 const ProductScreen = () => {
   const [product, setProduct] = useState({});
-  console.log(product)
+  // console.log(product)
 
   const { id: productId } = useParams();
-  console.log(productId)
+  // console.log(productId)
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -18,7 +18,7 @@ const ProductScreen = () => {
         `http://localhost:8000/api/products/${productId}`
       );
       setProduct(data);
-      console.log(data)
+      // console.log(data)
     };
 
     fetchProduct();
